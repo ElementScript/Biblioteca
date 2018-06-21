@@ -17,7 +17,7 @@
     "minimum-stability": "alpha",
     "autoload": {
         "psr-4": {
-            "Lib\\": "vendor\\system\\class\\"
+            "Lib\\": "system\\class\\"
         }
     }
 }
