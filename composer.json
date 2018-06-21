@@ -1,0 +1,23 @@
+{
+    "name": "filipe-machado/biblioteca",
+    "description": "Sistema de gerenciamento de livros e acervos da biblioteca da Faculdade Meta - FAMETA",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "^6.0",
+        "rain/raintpl": "^3.1",
+        "slim/slim": "^4.x-dev"
+    },
+    "license": "ISC",
+    "authors": [
+        {
+            "name": "filipe",
+            "email": "ax-filipe@hotmail.com"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "autoload": {
+        "psr-4": {
+            "Lib\\": "vendor\\system\\class\\"
+        }
+    }
+}
