@@ -1,8 +1,6 @@
 
 # Created by https://www.gitignore.io/api/node,sass,phpstorm,webstorm,visualstudio
 
-/view-cached/
-
 ### Node ###
 # Logs
 logs
