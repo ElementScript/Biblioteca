@@ -9598,6 +9598,7 @@ iframe.uk-cover {
   h3 {
     page-break-after: avoid; } }
 
+<<<<<<< HEAD
 .tm-navbar-container:not(.uk-navbar-transparent) {
   background: linear-gradient(to left, #28a5f5, #1e87f0);
   background-color: rgba(0, 0, 0, 0);
@@ -9613,4 +9614,15 @@ iframe.uk-cover {
 .uk-link {
   color: aliceblue !important;
   text-decoration: none; }
+=======
+/* Coolors Exported Palette - coolors.co/4d3960-0f65cd-5138dd-8068f4-d853e8 */
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background: linear-gradient(to left, #28a5f5, #1e87f0) !important; }
+
+.uk-link-nav {
+  color: #e0dcd0 !important;
+  font-weight: 600; }
+  .uk-link-nav:hover {
+    color: rgba(235, 102, 99, 0.8) !important; }
+>>>>>>> 5be0468be409a6b6c60f1b23c7ddfb8d5ae996e8
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if(!class_exists('Rain\Tpl')){exit;}?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,28 +7,6 @@
 
 </head>
 <body>
-<<<<<<< HEAD
-    
-    <nav class="uk-navbar-container tm-navbar-container uk-sticky" uk-navbar>
-        <div class="uk-navbar-right">        
-            <ul class="uk-navbar-nav">
-                <li><a class="uk-link" href="#">LANÇAMENTOS</a></li>
-                <li>
-                    <a class="uk-link" href="#">CADASTRO</a>
-                    <div class="uk-navbar-dropdown">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li><a class="uk-link-text" href="#">LIVROS</a></li>
-                            <li><a class="uk-link-text" href="#">ALUNOS</a></li>
-                            <li><a class="uk-link-text" href="#">USUÁRIOS</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a class="uk-link" href="#">LOGIN</a></li>
-            </ul>        
-        </div>        
-    </nav>    
-    <div class="uk-container">
-=======
     <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click">
         <div class="uk-navbar-left">
             <div class="uk-navbar-item uk-link-nav uk-logo">LibMeta <img src="/src/img/logo.png" width="80" alt="logo"></div>
@@ -60,4 +38,3 @@
         </div>
     </nav>
     <div class="uk-container">
->>>>>>> 5be0468be409a6b6c60f1b23c7ddfb8d5ae996e8

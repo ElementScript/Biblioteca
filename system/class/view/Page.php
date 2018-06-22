@@ -20,7 +20,7 @@ class Page
         "data"      => []
     ];
 
-    public function __construct(array $opts = [], string $route = "/views/")
+    public function __construct($opts = [], $route = "/views/")
     {
         $this->_defaults["data"]["session"] = $_SESSION;
 
@@ -45,13 +45,13 @@ class Page
 
     private function setData($data = [])
     {
-        foreach ($var as $key => $value)
+        foreach ($data as $key => $value)
         {
             $this->_tpl->assign($key, $value);
         }
     }
 
-    public function setTpl($tplName, $data =[], $returnHTML = false)
+    public function setTpl($tplName, $data = [], $returnHTML = false)
     {
         $this->setData($data);
         $this->_tpl->draw($tplName, $returnHTML);

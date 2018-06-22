@@ -8,11 +8,24 @@
 
 namespace Lib\model;
 
+use \PDO;
+
 class DB
 {
     private $_pdo;
-    public function __construct()
+    private static $_instance = null;
+
+    private function __construct()
     {
-        // TODO: create __construct method
+        $this->_pdo = new PDO("mysql: host=127.0.0.1; dbname=library", "root", "");
+    }
+
+    public static function getInstance()
+    {
+        if (self::$_instance == null) 
+        {
+            self::$_instance = new DB;
+        }
+        return self::$_instance;
     }
 }
