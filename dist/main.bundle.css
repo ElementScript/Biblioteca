@@ -9598,3 +9598,19 @@ iframe.uk-cover {
   h3 {
     page-break-after: avoid; } }
 
+.tm-navbar-container:not(.uk-navbar-transparent) {
+  background: linear-gradient(to left, #28a5f5, #1e87f0);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to left, #28a5f5, #1e87f0);
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto auto; }
+
+.uk-link {
+  color: aliceblue !important;
+  text-decoration: none; }
+
