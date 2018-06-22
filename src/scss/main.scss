@@ -1,3 +1,16 @@
 @import "~uikit/src/scss/variables-theme";
 @import "~uikit/src/scss/mixins-theme";
 @import "~uikit/src/scss/uikit-theme";
+@import "palette";
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: linear-gradient(to left, #28a5f5, #1e87f0) !important;
+}
+
+.uk-link-nav {
+    color: $timberwolf !important;
+    font-weight: 600;
+    &:hover{
+        color: $light-carmine-pink !important;
+    }
+}
