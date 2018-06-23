@@ -5,7 +5,7 @@
     "require": {
         "phpmailer/phpmailer": "^6.0",
         "rain/raintpl": "^3.1",
-        "slim/slim": "^3"
+        "slim/slim": "3.10.0"
     },
     "license": "ISC",
     "authors": [
