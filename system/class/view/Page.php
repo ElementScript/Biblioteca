@@ -22,7 +22,7 @@ class Page
 
     public function __construct($opts = [], $route = "/views/")
     {
-        $this->_defaults["data"]["session"] = $_SESSION;
+        // $this->_defaults["data"]["session"] = $_SESSION;
 
         $this->_options = array_merge($this->_defaults, $opts);
 
