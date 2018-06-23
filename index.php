@@ -23,4 +23,9 @@ $app->get('/', function () {
     $page = new Page();
     $page->setTpl("index");
 });
+
+$app->get('/{$name}', function () {
+    echo $name;
+});
+
 $app->run();
