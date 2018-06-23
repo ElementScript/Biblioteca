@@ -6,7 +6,7 @@
  * Time: 05:11
  */
 
-session_start();
+// session_start();
 
 require_once "vendor/autoload.php";
 
@@ -14,7 +14,7 @@ use \Lib\view\Page;
 use \Slim\App;
 
 $config = ['settings' => [
-    'addContentLengthHeader' => false,
+    'addContentLengthHeader' => false
 ]];
 
 $app = new App($config);
@@ -22,10 +22,6 @@ $app = new App($config);
 $app->get('/', function () {
     $page = new Page();
     $page->setTpl("index");
-});
-
-$app->get('/{$name}', function () {
-    echo $name;
 });
 
 $app->run();

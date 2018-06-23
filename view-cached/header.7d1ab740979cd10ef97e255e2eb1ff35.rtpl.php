@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if(!class_exists('Rain\Tpl')){exit;}?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
 <body>
     <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click">
         <div class="uk-navbar-left">
-            <div class="uk-navbar-item uk-logo" style="color: aliceblue">LibMeta <img src="/src/img/logo.png" width="80" alt="logo"></div>
+            <div class="uk-navbar-item uk-link-nav uk-logo">LibMeta <img src="/src/img/logo.png" width="80" alt="logo"></div>
         </div>
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav">

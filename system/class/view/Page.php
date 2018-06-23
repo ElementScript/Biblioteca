@@ -20,9 +20,9 @@ class Page
         "data"      => []
     ];
 
-    public function __construct(array $opts = [], string $route = "/views/")
+    public function __construct($opts = [], $route = "/views/")
     {
-        $this->_defaults["data"]["session"] = $_SESSION;
+        // $this->_defaults["data"]["session"] = $_SESSION;
 
         $this->_options = array_merge($this->_defaults, $opts);
 
@@ -51,7 +51,7 @@ class Page
         }
     }
 
-    public function setTpl($tplName, $data =[], $returnHTML = false)
+    public function setTpl($tplName, $data = [], $returnHTML = false)
     {
         $this->setData($data);
         $this->_tpl->draw($tplName, $returnHTML);
