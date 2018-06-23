@@ -1,2 +1,1 @@
-<?php if(!class_exists('Rain\Tpl')){exit;}?><h1>Hello world</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, voluptates vero. Dolorum facilis quae id, eos excepturi placeat reiciendis assumenda totam, culpa vero amet! Eius, dignissimos. A, ut neque? Perspiciatis?</p>
+<?php if(!class_exists('Rain\Tpl')){exit;}?> 

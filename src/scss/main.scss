@@ -1,32 +1,6 @@
 @import "~uikit/src/scss/variables-theme";
 @import "~uikit/src/scss/mixins-theme";
 @import "~uikit/src/scss/uikit-theme";
-<<<<<<< HEAD
-
-$blue: #0000FF;
-$DeepSkyBlue: #00BFFF;
-$Crimson: #DC143C;
-$DarkTurquoise: #00CED1;
-$MediumSpringGreen: #00FA9A;
-$SpringGreen: #00FF7F;
-
-.tm-navbar-container:not(.uk-navbar-transparent) {
-    background: linear-gradient(to left, #28a5f5, #1e87f0);
-    background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(to left, rgb(40, 165, 245), rgb(30, 135, 240));
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-clip: border-box;
-    background-origin: padding-box;
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-size: auto auto;
-}
-
-.uk-link {
-    color: aliceblue !important;
-    text-decoration: none;
-=======
 @import "palette";
 
 .uk-navbar-container:not(.uk-navbar-transparent) {
@@ -37,7 +11,6 @@ $SpringGreen: #00FF7F;
     color: $timberwolf !important;
     font-weight: 600;
     &:hover{
-        color: $light-carmine-pink !important;
+        color: $timberwolf-darker1 !important;
     }
->>>>>>> 5be0468be409a6b6c60f1b23c7ddfb8d5ae996e8
 }

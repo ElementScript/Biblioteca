@@ -2,27 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>LibMeta</title>
     <link rel="stylesheet" href="/dist/main.bundle.css">
+
 </head>
 <body>
-    
-    <nav class="uk-navbar-container tm-navbar-container uk-sticky" uk-navbar>
-        <div class="uk-navbar-right">        
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click">
+        <div class="uk-navbar-left">
+            <div class="uk-navbar-item uk-logo" style="color: azure">LibMeta <img src="/src/img/logo.png" width="80" alt="logo"></div>
+        </div>
+        <div class="uk-navbar-right">
             <ul class="uk-navbar-nav">
-                <li><a class="uk-link" href="#">LANÇAMENTOS</a></li>
                 <li>
-                    <a class="uk-link" href="#">CADASTRO</a>
+                    <a class="uk-link-nav" href="" >Lançamentos<span uk-icon="icon: chevron-down"></span></a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li><a class="uk-link-text" href="#">LIVROS</a></li>
-                            <li><a class="uk-link-text" href="#">ALUNOS</a></li>
-                            <li><a class="uk-link-text" href="#">USUÁRIOS</a></li>
+                            <li><a onclick="reservado()" href="#">Reservar</a></li>
+                            <li><a href="#">Emprestar</a></li>
+                            <li><a href="#">Devolver</a></li>
                         </ul>
                     </div>
                 </li>
-                <li><a class="uk-link" href="#">LOGIN</a></li>
-            </ul>        
-        </div>        
-    </nav>    
+                <li>
+                    <a class="uk-link-nav" href="">Cadastros<span uk-icon="icon: chevron-down"></span></a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="#">Livros</a></li>
+                            <li><a href="#">Alunos</a></li>
+                            <li><a href="#">Usuários</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="uk-link-nav" href="">Ajuda</a></li>                
+            </ul>
+        </div>
+    </nav>
     <div class="uk-container">
