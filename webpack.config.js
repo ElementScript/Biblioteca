@@ -2,15 +2,17 @@ const path = require('path');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-module.exports = {
-  entry: './app/index.js',
-
+const config = {
+  entry: {
+    index: './app/index.js', 
+    aux: './src/js/aux.js',
+  },
   output: {
     filename: '[name].bundle.js',
     chunkFilename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  mode: 'production',
+  mode: 'development',
   plugins: [
     new UglifyJSPlugin(), 
     new MiniCssExtractPlugin({ filename:'[name].bundle.css' })
@@ -45,3 +47,5 @@ module.exports = {
     }]
   }
 }
+
+module.exports = config;
