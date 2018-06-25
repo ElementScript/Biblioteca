@@ -11,5 +11,8 @@ namespace Lib\controller;
 
 class Aluno
 {
-
+    
+    public function __construct() {
+        // TODO: to create constructor
+    }
 }

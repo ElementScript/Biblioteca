@@ -24,4 +24,9 @@ class Livro
     {
         return self::$_access->select("livro");
     }
+
+    public function insert()
+    {
+        return self::$_access->insert("livro");
+    }
 }
