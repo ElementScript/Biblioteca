@@ -9,7 +9,30 @@
 namespace Lib\controller;
 
 
-class Usuario
+class Usuario implements FactoryInterface
 {
+    public function __construct()
+    {
+        // TODO: Implement __construct() method.
+    }
 
+    public static function select()
+    {
+        // TODO: Implement select() method.
+    }
+
+    public static function insert()
+    {
+        // TODO: Implement insert() method.
+    }
+
+    public static function update()
+    {
+        // TODO: Implement update() method.
+    }
+
+    public static function delete()
+    {
+        // TODO: Implement delete() method.
+    }
 }

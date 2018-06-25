@@ -8,25 +8,25 @@
 
 namespace Lib\controller;
 
-
-use Lib\model\DB;
-
-class Livro
+class Livro implements FactoryInterface
 {
-    private static $_access;
-
-    public function __construct()
+    public function select(array $params = []): FactoryInterface
     {
-        self::$_access = DB::getInstance();
+        // TODO: Implement select() method.
     }
 
-    public static function select()
+    public function insert(string $operation, array $params = []): FactoryInterface
     {
-        return self::$_access->select("livro");
+        // TODO: Implement insert() method.
     }
 
-    public function insert()
+    public function update(string $operation, array $params = []): FactoryInterface
     {
-        return self::$_access->insert("livro");
+        // TODO: Implement update() method.
+    }
+
+    public function delete(string $operation, array $params = []): FactoryInterface
+    {
+        // TODO: Implement delete() method.
     }
 }

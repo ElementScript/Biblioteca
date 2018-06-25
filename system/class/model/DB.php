@@ -13,15 +13,51 @@ use \PDO;
 class DB
 {
     private $_pdo;
-    private $_sql;
-    private $_statement;
     private static $_instance = null;
+
+    /**
+     * @return PDO
+     */
+    public function getPdo(): PDO
+    {
+        return $this->_pdo;
+    }
+
+    /**
+     * @param PDO $pdo
+     */
+    public function setPdo(PDO $pdo): void
+    {
+        $this->_pdo = $pdo;
+    }
 
     private function __construct()
     {
-        $this->_pdo = new PDO("mysql: host=127.0.0.1; dbname=biblioteca", "root", "guitar");
+        $this->setPdo(new PDO("mysql: host=127.0.0.1; dbname=biblioteca", "root", "guitar"));
+        return $this->getPdo();
     }
 
+    /**
+     * Impedindo a clonagem do objeto (que possibilita uma segunda instância)
+     */
+    private function __clone()
+    {
+        // TODO: Implement __clone() method.
+    }
+
+    /**
+     * Impedindo a desserialização do objeto (que possibilita uma segunda instância)
+     */
+    private function __wakeup()
+    {
+        // TODO: Implement __wakeup() method.
+    }
+
+    /**
+     * @return DB|null
+     *
+     * Singleton Pattern
+     */
     public static function getInstance()
     {
         if (self::$_instance == null) 
@@ -29,33 +65,5 @@ class DB
             self::$_instance = new DB;
         }
         return self::$_instance;
-    }
-
-    public function query($operation, $params = [])
-    {
-        $this->_sql = "$operation $params";
-        $this->_statement = $this->_pdo->prepare($this->_sql);
-        $this->_statement->execute();
-        return $this->_statement->fetchAll(PDO::FETCH_ASSOC);
-    }
-
-    public function select($table, $params = [])
-    {
-        return $this->query("SELECT * FROM $table ", $params);
-    }
-
-    public function insert($table, $params = [])
-    {
-        return $this->query("INSERT INTO $table ", $params);
-    }
-
-    public function update($table, $params = [])
-    {
-        return $this->query("UPDATE $table ", $params);
-    }
-
-    public function delete($table, $params = [])
-    {
-        return $this->query("UPDATE $table ", $params);
     }
 }
