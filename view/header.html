@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LibMeta</title>
+    <link rel="shortcut icon" href="/src/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/dist/index.bundle.css">
+    <script src="/dist/index.bundle.js"></script>
+
+</head>
+<body>
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click">
+        <div class="uk-navbar-left">            
+            <a class="uk-navbar-item" style="color: aliceblue" href="#offcanvas-usage" uk-toggle>
+                <span uk-navbar-toggle-icon></span><span class="uk-margin-small-left">Menu</span>
+            </a>
+        </div>
+        <div class="ul-navbar-center">
+            <div class="uk-navbar-item uk-logo" style="color: aliceblue">LibMeta<img class="uk-margin-small-left" src="/src/img/logo.png" width="80" alt="logo"></div>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a class="uk-link-nav" href="">Fulano<span uk-icon="icon: chevron-down"></span></a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="#">Configurações</a></li>
+                            <li><a href="#">Sair</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="uk-link-nav" href="">Ajuda</a></li>                                
+            </ul>
+        </div>
+    </nav>
+    <div class="uk-offcanvas-content">
+        <div id="offcanvas-usage" uk-offcanvas="mode: reveal; overlay: true; bg-close: false">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-text-center uk-offcanvas-bar-animation uk-offcanvas-slide">
+                <button class="uk-offcanvas-close uk-close-large" type="button" uk-close></button>
+                <div class="uk-navbar-item uk-logo uk-margin" style="color: aliceblue">LibMeta<img class="uk-margin-small-left" src="/src/img/logo.png" width="80" alt="logo"></div>
+                <div class="uk-width-1-1">
+                    <ul class="uk-nav-primary uk-nav-parent-icon" uk-nav="duration: 750">                        
+                        <li class="uk-nav-divider"></li>
+                        <li class="uk-parent">
+                            <a href="#"><img class="parent-png uk-margin-small-right" src="/src/img/icons/lib/png/021-notebook-3.png" alt="">LIVRO</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Emprestar<img class="sons-png uk-margin-small-left" src="/src/img/icons/lib/png/017-agenda.png" alt=""></a></li>
+                                <li><a href="#">Reservar<img class="sons-png uk-margin-small-left" src="/src/img/icons/lib/png/019-bookmark.png" alt=""></span></a></li>
+                                <li><a style="color: #2B9eB3" href="#">Devolver<img class="sons-png uk-margin-small-left" src="/src/img/icons/lib/png/023-notebook-1.png" alt=""></span></a></li>
+                                <li><a style="color: #DAE90E" href="#">Devolver COM multa<img class="sons-png uk-margin-small-left" src="/src/img/icons/lib/png/014-time-is-money.png" alt=""></span></a></li>
+                                <li><a href="#">Cadastrar<img class="sons-png uk-margin-small-left" src="/src/img/icons/lib/png/022-notebook-2.png" alt=""></a></li>
+                                <li><a href="#">Atualizar<img class="sons-png uk-margin-small-left" src="/src/img/icons/lib/png/028-notebook.png" alt=""></a></li>
+                                <li><a style="color: #F72D6F" href="#">Deletar<img class="sons-png uk-margin-small-left" src="/src/img/icons/lib/png/018-notebook-4.png" alt=""></a></li>
+                            </ul>
+                        </li>                        
+                        <li class="uk-nav-divider"></li>
+                        <li class="uk-parent">
+                            <a href="#"><img class="parent-png uk-margin-small-right" src="/src/img/icons/lib/png/027-user-3.png" alt="">ESTUDANTE</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Listar com multa<img class="sons-png uk-margin-small-left" src="/src/img/icons/lib/png/016-user-6.png" alt=""></a></li>
+                                <li><a style="color: #DAE90E" href="#">Registrar multa<img class="sons-png uk-margin-small-left" src="/src/img/icons/lib/png/015-coin.png" alt=""></a></li>
+                                <li><a style="color: #DAE90E" href="#">Estornar multa<img class="sons-png uk-margin-small-left" src="/src/img/icons/lib/png/013-coin-1.png" alt=""></a></li>
+                            </ul>
+                        </li>
+                        <li class="uk-nav-divider"></li>
+                        <li class="uk-parent">
+                            <a href="#"><img class="parent-png uk-margin-small-right" src="/src/img/icons/lib/png/010-user-9.png" alt="">USUÁRIO</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Cadastrar<img class="sons-png uk-margin-small-left" src="/src/img/icons/lib/png/012-user-7.png" alt=""></a></li>
+                                <li><a href="#">Alterar<img class="sons-png uk-margin-small-left" src="/src/img/icons/lib/png/009-user-10.png" alt=""></a></li>
+                                <li><a style="color: #F72D6F" href="#">Excluir<img class="sons-png uk-margin-small-left" src="/src/img/icons/lib/png/008-user-11.png" alt=""></a></li>
+                            </ul>
+                        </li>
+                        <li class="uk-nav-divider"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-container">

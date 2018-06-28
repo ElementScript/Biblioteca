@@ -5,26 +5,25 @@
  * Date: 21/06/18
  * Time: 05:11
  */
+session_start();
 
-// session_start();
+require_once ("vendor/autoload.php");
 
-require_once "vendor/autoload.php";
-
-use \Lib\view\Page;
+use \Lib\Page;
 use \Slim\App;
+use \Lib\controller\Session;
 
-$config = ['settings' => [
-    'addContentLengthHeader' => false
-]];
+$app = new App;
 
-$app = new App($config);
-
-$app->get('/', function () {
+$app->get('/admin', function () {
     $page = new Page();
     $page->setTpl("index");
-    $livro = new \Lib\controller\Livro();
-    $livro->select();
-    var_dump($livro);
 });
+
+$app->get('/', function() {
+    $page = new Page(["header" => false, "footer" => false]);
+    $page->setTpl("login");
+});
+
 
 $app->run();

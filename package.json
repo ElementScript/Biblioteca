@@ -1,22 +1,12 @@
 {
-  "name": "biblioteca",
-  "version": "1.0.0",
-  "description": "Sistema de gerenciamento de livros e acervos da biblioteca da Faculdade Meta - FAMETA",
-  "main": "index.js",
+  "name": "libmeta",
+  "version": "0.0.1",
   "scripts": {
     "build": "npm run clean && webpack",
     "build:dev": "npm run clean && webpack --watch",
     "clean": "rimraf dist",
     "webpack": "webpack"
   },
-  "keywords": [
-    "biblioteca",
-    "sistema",
-    "administrativo",
-    "gerenciamento"
-  ],
-  "author": "Filipe Machado <ax-filipe@hotmail.com> (https://www.github.com/misterblizzard)",
-  "license": "ISC",
   "dependencies": {
     "jquery": "^3.3.1",
     "uikit": "^3.0.0-rc.6"

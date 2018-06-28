@@ -1,0 +1,35 @@
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
+@import "src/scss/palette.scss";
+@import "src/img/icons/money-set/font/_flaticon.scss";
+
+@import "~uikit/src/scss/uikit";
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: linear-gradient(to left, lighten($color: #222, $amount: 5%), #222) !important;
+}
+
+.uk-offcanvas-bar {
+    background: linear-gradient(to left, lighten($color: #222, $amount: 5%), #222) !important;
+}
+
+.uk-navbar {
+    display: flex;
+    position: relative;
+}
+
+.uk-link-nav {
+    color: saturate($color: #ffffff, $amount: 15%) !important;
+}
+
+.uk-nav-sub {
+    text-align: end;
+}
+
+img.parent-png {
+    width: 25px;
+}
+
+img.sons-png {
+    width: 20px;
+}
